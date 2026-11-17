@@ -1,0 +1,48 @@
+# ===================================
+# ECLIPSE - WORKSPACE METADATA
+# ===================================
+
+**/.metadata/
+
+**/*.log
+**/*.tmp
+**/*.bak
+**/*.swp
+
+**/.settings/
+
+**/*.launch
+
+**/.pydevproject
+
+**/bin/
+**/tmp/
+**/.recommenders/
+
+# ===================================
+# PYTHON
+# ===================================
+
+Python/.venv/
+Python/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# ===================================
+# JULIA
+# ===================================
+
+Julia/.julia/
+Julia/compiled/
+**/*.ji
+
+# ===================================
+# TEMPORARY FILES
+# ===================================
+
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
