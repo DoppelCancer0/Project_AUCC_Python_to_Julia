@@ -1,3 +1,16 @@
+
+import importlib.metadata, subprocess, sys
+
+required  = {'scikit-learn','numpy','scipy'}
+installed = {pkg.metadata['Name'] for pkg in importlib.metadata.distributions()}
+missing   = required - installed
+
+if missing:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', *missing])
+
+
+
 """Imports a function to check if data and labels have the same size"""
 from sklearn.utils import check_X_y
 """Imports a function to convert cluster labels into integers"""
